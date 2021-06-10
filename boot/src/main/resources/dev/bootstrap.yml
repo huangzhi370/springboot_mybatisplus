@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: springboot_mybatis_demo
+  profiles:
+    active: dev
+server:
+  port: 8099
+
+#日志配置
+logging:
+  config: classpath:logback-${spring.profiles.active}.xml
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: ERROR
+    com:
+      alibaba:
+        nacos:
+          client:
+            naming: ERROR
+      baomidou:
+        ant:
+          sys:
+            mapper: DEBUG
