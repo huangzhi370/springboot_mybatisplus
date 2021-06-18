@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  */
 @SpringBootApplication
 @ComponentScan(value = "com.hz.server.*")
-@MapperScan(value="com.hz.server.test.mapper.*")
+@MapperScan(value="com.hz.server.test.*")
 @EnableScheduling
 public class BootDemoApplication {
 
